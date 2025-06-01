@@ -1,0 +1,137 @@
+@import "variable";
+@import "CSSReset";
+@import "layout";
+
+*{
+    // outline: 1px solid #000;
+    font-family: $font-family-base;
+    line-height: 150%;
+}
+
+.wrapper{
+    .intro{
+        display: flex;
+        img{
+            width: 50%;
+        }
+        .title{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            padding-left: 80px;
+            color: $main-color;
+            gap: 12px;
+            h1{
+                font-size: 120px;
+                font-weight: 900;
+            }
+            p{
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+    }
+    .new{
+        display: flex;
+        gap: 24px;
+        border-top: 1px solid #6C757D;
+        border-bottom: 1px solid #6C757D;
+        img{
+            width: 50%;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 120px;
+            div{
+                display: flex;
+                gap: 8px;
+            }
+        }
+    }
+    .list{
+        width: 100%;
+        padding: 80px 0px;
+        .search-bar{
+            margin-left: 50px;
+        }
+        .content{
+            display: flex;
+            gap: 5%;
+            padding: 0px 50px;
+            flex-wrap: wrap;
+            li{
+                img{
+                    width: 100%;
+                }
+                width: 30%; 
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+        .pagination{
+            display: flex;
+        }
+    }
+}
+.personal-info{
+    display: flex;
+    align-items: center;
+    padding: 80px 312px;
+    gap: 24px;
+    border-top: 1px solid #6C757D;
+    .email{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    ul{
+        display: flex;
+    }
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        .intro{
+            flex-wrap: wrap;
+            img{
+                width: 100%;
+            }
+
+        }
+        .new{
+            flex-wrap: wrap;
+            padding-bottom: 48px;
+            img{
+                width: 100%;
+            }
+            .content{
+                padding: 0px 12px;
+            }
+        }
+        .list{
+            .content{
+                flex-wrap: wrap;
+                li{
+                    width: 100%;
+                    padding: 32px 12px;
+                }
+            }
+        }
+    }
+    .footer{
+        .personal-info{
+            display: none;
+        }
+        .right{
+            border-top: 1px solid #6C757D;
+            padding: 24px 0px;
+        }
+    }
+}

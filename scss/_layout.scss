@@ -1,0 +1,104 @@
+.header {
+    margin: 24px 80px;
+    .menu{
+        display: flex; 
+        justify-content: center;
+        gap: 40px;
+    }
+    a{
+        text-decoration: none;
+        color: $black;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+.footer{
+    .right{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 416px;
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+    padding: 8px 16px;
+    gap: 10px;
+    img{
+        width: 24px;
+    }
+    .search-input{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        flex-grow: 1; /* 讓輸入框佔據剩餘的所有空間 */
+    }
+}
+.time{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.tag{
+    color: $main-color;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.highlight{
+    color: $white;
+    background: $main-color;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 40px;
+    margin-bottom: 8px;
+}
+h2{
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    overflow: hidden; /* 隱藏超出容器的內容 */
+    -webkit-line-clamp: 2; /* 限制顯示兩行文字 */
+    display: -webkit-box; /* 必須搭配 -webkit-box-orient 使用 */
+    -webkit-box-orient: vertical; /* 指定文字排版方向為垂直 */
+}
+.read-more-btn{
+    width: 64px;
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: 1px solid $black;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4B4B4B;
+    text-decoration: none;
+    &:hover{
+        color: $white;
+        background: $main-color;
+    }
+}
+.pagination{
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 20px;
+    a{
+        color: $black;
+        text-decoration: none;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
